@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Adobera Fresca",
+      "img": "Pic/quesosSinFondo/abobera-fresco.png",
+      "description": "Queso de textura suave , con un sabor suave y ligeramente salado."
+    },
+    {
+      "name": "Adobera Enchilada",
+      "img": "Pic/quesosSinFondo/adobera-enchilada.png",
+      "description": "Es una variante de la adobera fresca, con un ligero sabor picante y un color rojizo."
+    },
+    {
+      "name": "Adobera Seca",
+      "img": "Pic/quesosSinFondo/adobera-seca.png",
+      "description": "A diferencia de la adobera fresca, esta versión tiene un proceso de secado, lo que le da una textura más firme y un sabor más intenso."
+    },
+    {
+      "name": "Botaneras",
+      "img": "Pic/quesosSinFondo/Botaneras-sin.png",
+      "description": "Es similar al queso panela pero con un toque más salado.."
+    },
+    {
+      "name": "Panela",
+      "img": "Pic/quesosSinFondo/Panela-chica.png",
+      "description": "Tiene una textura firme pero esponjosa, y un sabor muy suave y ligeramente dulce."
+    },
+    {
+      "name": "Queso Fresco",
+      "img": "Pic/quesosSinFondo/Queso-fresco-ch-gd.png",
+      "description": "Queso suave y húmedo, con un sabor suave y ligeramente ácido, y se desmorona fácilmente."
+    }
+  ]
