@@ -10,31 +10,68 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #709EBE;">
         <a class="navbar-brand" href="#">Lácteos & Derivados Belen</a>
-        <div class="collapse navbar-collapse">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Recetas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-                <li class="nav-item"><a class="btn btn-outline-primary" href="#">Iniciar sesión</a></li>
-                <li class="nav-item"><a class="btn btn-primary" href="#">Registro</a></li>
+                <li class="nav-item my-2 my-lg-0"><a class="btn btn-outline-primary" href="#">Iniciar sesión</a></li>
+                <li class="nav-item ml-lg-2 my-2 my-lg-0"><a class="btn btn-primary" href="#">Registro</a></li>
             </ul>
         </div>
     </nav>
-
-    <div class="container my-5">
-        <h1 class="text-center" style="color: #00173D;">Acerca de Nosotros</h1>
-        <p class="text-center" style="color: #000000;">Bienvenidos a Lácteos & Derivados Belen, donde ofrecemos productos frescos de la mejor calidad. Nuestra pasión son los lácteos y nos esforzamos por deliverar lo mejor a nuestros clientes.</p>
-        
+    <div class="header-image">
+        <img src="/Pic/Header.jpg" alt="Imagen de Encabezado" class="img-fluid">
+    </div>
+    <div class="container my-4 my-md-5">
         <div class="video-container text-center my-4">
-            <iframe class="rounded" width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            <video class="responsive-video" controls autoplay muted>
+                <source src="/Pic/Conocenos.mp4" type="video/mp4">
+                Tu navegador no soporta el video
+            </video>
+        </div>
+        <hr>
+        <div class="row my-4">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <img src="/Pic/Fabricacion.jpg" alt="Imagen 1" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-3">Nuestra Historia</h2>
+                <p class="content-text">Lacteos & derivados Belen nació de una pasión familiar por los productos lácteos y el deseo de compartir con nuestra comunidad lo mejor de la tradición y el sabor auténtico. Todo comenzó hace varias decadas, en las varas Nayarit, donde nuestros fundadores, iniciaron este sueño con una pequeña producción artesanal de queso y leche fresca. Con el tiempo, gracias al apoyo de nuestros clientes y al esfuerzo diario, fuimos creciendo y diversificando nuestra oferta, siempre manteniendo los valores de calidad, frescura y compromiso que nos definen desde el primer día. Hoy, seguimos siendo una empresa familiar, pero con una visión más amplia: llevar el sabor y la nutrición de nuestros productos lácteos a cada hogar, respetando nuestras raíces y adaptándonos a las necesidades de un mundo moderno. Cada producto que elaboramos es un tributo a nuestra historia y una promesa de seguir trabajando con el mismo amor y dedicación que nos inspiró desde el principio.</p>
+            </div>
+        </div>
+        
+        <div class="row my-4">
+            <div class="col-md-6 order-md-2 mb-3 mb-md-0">
+                <img src="/Pic/Queso.jpg" alt="Imagen 2" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h2 class="mb-3">Nuestro Sabor</h2>
+                <p class="content-text">El sabor es nuestra esencia. Cada uno de nuestros productos está elaborado con ingredientes 100% naturales, seleccionados cuidadosamente para garantizar frescura y calidad en cada bocado. Nuestro secreto es la combinación perfecta entre la tradición artesanal, heredada de generaciones, y las técnicas modernas que nos permiten conservar el auténtico sabor de lo natural. Cada producto está hecho con dedicación y pasión, pensado para deleitar tu paladar y nutrir tu cuerpo. En cada sabor, encontrarás el amor y el cuidado que nos distinguen como una empresa comprometida con la excelencia y el bienestar de quienes nos eligen.</p>
+            </div>
+        </div>
+        
+        <div class="row my-4">
+            <div class="col-md-6 mb-3 mb-md-0">
+                <img src="/Pic/Reunion.jpg" alt="Imagen 3" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h2 class="mb-3">Nuestra misión, visión y valores</h2>
+                <p class="content-text">Nuestra misión es ofrecer productos lácteos y derivados de la más alta calidad, elaborados con ingredientes naturales y procesos que combinan la tradición artesanal con la innovación tecnológica, garantizando frescura, sabor y nutrición en cada uno de nuestros productos. Nos esforzamos por ser un referente en el sector, promoviendo una alimentación saludable y sostenible, mientras apoyamos a los productores locales y contribuimos al desarrollo de nuestra comunidad. Nuestra visión es convertirnos en líderes reconocidos a nivel regional y nacional, no solo por la excelencia de nuestros productos, sino también por nuestro compromiso con el bienestar de las personas y el cuidado del medio ambiente. Nos guían valores fundamentales como la calidad en cada detalle, la responsabilidad ambiental, la transparencia en nuestras acciones, el respeto por nuestras raíces y tradiciones, y la cercanía con nuestros clientes, a quienes consideramos parte esencial de nuestra historia. En cada paso que damos, buscamos transmitir el amor por lo natural y el compromiso que nos define como una empresa familiar y socialmente responsable.</p>
+            </div>
         </div>
     </div>
-
     <footer class="text-center py-4" style="background-color: #709EBE;">
-        <p>&copy; 2025 Lácteos & Derivados Belen. Todos los derechos reservados.</p>
-        <div>
-            <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+        <div class="container">
+            <p class="mb-2">&copy; 2023 Lácteos y Derivados. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" class="mx-2">Facebook</a> | <a href="#" class="mx-2">Twitter</a> | <a href="#" class="mx-2">Instagram</a>
+            </div>
         </div>
     </footer>
 
