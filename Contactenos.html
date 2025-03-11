@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Contacto</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container-fluid vh-100 d-flex flex-column">
+        <div class="bg-image d-flex align-items-center justify-content-center">
+            <h1 class="text-white font-lora-bold">Contacto</h1>
+        </div>
+        <div class="contact-container col-md-5 col-lg-4 p-4 rounded shadow mx-auto">
+            <h1 class="text-center mb-4">Contáctanos</h1>
+            
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensaje</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                
+                <div id="successMessage" class="alert text-center" style="display: none;">
+                    ¡Su mensaje ha sido enviado con éxito!
+                </div>
+                
+                <button type="submit" class="btn btn-primary w-100">Enviar Mensaje</button>
+            </form>
+        </div>
+        
+        <!-- Nueva sección para la sucursal -->
+        <div class="container mt-5">
+            <h2 class="text-center mb-4">Nuestra sucursal</h2>
+            <br>
+            <div class="row">
+                <div class="text-start col-md-6">
+                    <p><strong>Visítanos en nuestra sucursal.</strong></p>
+                    <br>
+                    <p><strong><i class="fas fa-map-marker-alt"></i> Ubicación:</strong> Calle Jose María Luis Mora # 13,<br>
+                        Col. Nueva Galicia, Las Varas Nayarit</p>
+                    <p><strong><i class="fas fa-phone-alt"></i> Teléfono:</strong> 327 272 2065</p>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.220121807651!2d-105.13637232491469!3d21.183412880504875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8420d60e9197e27b%3A0xdeadcedd08a9a8e!2sJos%C3%A9%20Mar%C3%ADa%20Luis%20Mora%20Ote.%2013%2C%20Nueva%20Galicia%2C%2063715%20Las%20Varas%2C%20Nay.!5e0!3m2!1ses!2smx!4v1741283384674!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="/lacteosBelen/index.js"></script>
+</body>
+</html>
