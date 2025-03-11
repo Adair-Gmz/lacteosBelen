@@ -66,9 +66,10 @@ h1 {
 }
 
 .bg-image {
-    background-image: url('/lacteosBelen/conactenos.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-image: url('/conactenos.jpg'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover;
     background-position: center;
+    height: 250px;
    
 }
 
