@@ -15,7 +15,102 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./styles.css">
+    <!-- Custom CSS <link rel="stylesheet" href="./styles.css"> -->
+    <style>
+    :root {
+        --color-light: #FEFFEA;
+        --color-blue-light: #709EBE;
+        --color-yellow: #F4D35E;
+        --color-dark-blue: #00173D;
+        --color-deep-blue: #02579E;
+        --color-pink: #E6A5B5;
+    }
+    
+    body {
+        background-color: var(--color-light);
+        font-family: 'Lato', sans-serif;
+        color: var(--color-dark-blue);
+       
+    }
+    
+    .contact-container {
+        background-color: white;
+        border: 2px solid var(--color-blue-light);
+        transition: all 0.3s ease;
+    }
+    
+    .contact-container:hover {
+        transform: scale(1.02);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .form-control {
+        border-color: var(--color-blue-light);
+        transition: border-color 0.3s ease;
+    }
+    
+    .form-control:focus {
+        border-color: var(--color-pink);
+        box-shadow: 0 0 0 0.2rem rgba(230, 165, 181, 0.25);
+    }
+    
+    h1 {
+        font-family: 'Lora', serif;
+        color: var(--color-dark-blue);
+        margin-bottom: 20px;
+    }
+    
+    .btn-primary {
+        background-color: var(--color-deep-blue);
+        border-color: var(--color-deep-blue);
+        transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+        background-color: var(--color-dark-blue);
+        transform: scale(1.05);
+    }
+    
+    #successMessage {
+        background-color: var(--color-yellow);
+        color: var(--color-dark-blue);
+        border: none;
+    }
+    
+    @media (max-width: 768px) {
+        .contact-container {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    
+    .bg-image {
+        background-image: url('/Pic/conactenos.jpg'); /* Reemplaza con la ruta de tu imagen */
+        background-size: cover;
+        background-position: center;
+       
+    }
+    
+    
+    .font-lora-bold {
+        font-family: 'Lora', serif;
+        font-weight: 700;
+    }
+    
+    /* Estilos adicionales para la sección de la sucursal */
+    
+    
+    h2 {
+        font-family: 'Lora', serif;
+        color: var(--color-dark-blue);
+        margin-bottom: 20px;
+    }
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    </style>
 </head>
 <body>
     <div class="container-fluid vh-100 d-flex flex-column">
