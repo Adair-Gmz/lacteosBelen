@@ -1,0 +1,187 @@
+body {
+    background-color: #FEFFEA;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    animation: fadeIn 2s ease-in;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #00173D;
+    margin-bottom: 1.5rem;
+}
+
+
+
+.text-center {
+    font-family: 'Roboto', sans-serif;
+}
+
+.video-container {
+    animation: zoomIn 1s ease-in;
+    position: relative;
+    padding-bottom: 56.25%; /* Proporción 16:9 para videos */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.video-container .responsive-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header-image {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+footer {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0;
+    background-color: #709EBE;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #e6e6e6;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+.content-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+
+/* Contenedor de productos */
+.product-container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Cada elemento de producto */
+.product-item {
+    margin-bottom: 40px;
+}
+
+/* Contenedor para imágenes de producto */
+.product-image {
+    width: 100%;
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botón de añadir al carrito */
+.add-to-cart-btn {
+    background-color: #0d6efd;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .content-text {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .my-4 {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Mejorando los botones en dispositivos móviles */
+@media (max-width: 992px) {
+    .navbar-nav .btn {
+        display: block;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 0.5rem;
+    }
+}
+
+
+
+
+
