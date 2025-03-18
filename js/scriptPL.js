@@ -62,7 +62,7 @@ function displayProducts() {
  // Carga los productos desde un archivo JSON
  
 function loadProductsFromJSON() {
-    fetch('../src/products.json')
+    fetch('../Pic/products.json')
         .then(response => {
             if (!response.ok) {
                 throw new Error('No se pudo cargar el archivo JSON');
