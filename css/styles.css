@@ -16,13 +16,12 @@ h2 {
     font-family: 'Roboto', sans-serif;
 }
 
+
 .video-container {
-    animation: zoomIn 1s ease-in;
     position: relative;
-    padding-bottom: 56.25%; /* Proporción 16:9 para videos */
+    padding-bottom: 56.25%; /* 16:9 */
     height: 0;
     overflow: hidden;
-    max-width: 100%;
 }
 
 .video-container .responsive-video {
