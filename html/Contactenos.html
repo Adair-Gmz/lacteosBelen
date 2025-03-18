@@ -13,11 +13,10 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="../css/styles.css">
-    <!-- Custom CSS -->
-    <!-- Custom CSS <link rel="stylesheet" href="./styles.css"> -->
-    <style>
-    :root {
+
+   :root {
         --primary-color: #02579E;
         --secondary-color: #709EBE;
         --light-color: #FEFFEA;
@@ -179,7 +178,14 @@
         --color-deep-blue: #02579E;
         --color-pink: #E6A5B5;
     }
-    
+   
+    body {
+        background-color: var(--color-light);
+        font-family: 'Lato', sans-serif;
+        color: var(--color-dark-blue);
+       
+    }
+
     .contact-container {
         background-color: white;
         border: 2px solid var(--color-blue-light);
@@ -225,22 +231,26 @@
         border: none;
     }
     
-    /*.bg-image {
-        background-image: url('../Pic/conactenos.jpg');
+    @media (max-width: 768px) {
+        .contact-container {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    
+    .bg-image {
+        background-image: url('../Pic/conactenos.jpg'); /* Reemplaza con la ruta de tu imagen */
         background-size: cover;
         background-position: center;
-        height: 200px; /* Ajustar altura para mejor presentación 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    } */
-    
+       
+    }
+       
     .font-lora-bold {
         font-family: 'Lora', serif;
         font-weight: 700;
     }
-    
+    /* Estilos adicionales para la sección de la sucursal */
+
     h2 {
         font-family: 'Lora', serif;
         color: var(--color-dark-blue);
@@ -381,7 +391,6 @@
         </div>
     </nav>
 
-
         <div class="contact-container col-md-5 col-lg-4 p-4 rounded shadow mx-auto">
             <h1 class="text-center mb-4">Contáctanos</h1>
             
@@ -433,5 +442,6 @@
     
     <!-- Custom JavaScript -->
     <script src="../js/main.js"></script>
+
 </body>
 </html>
