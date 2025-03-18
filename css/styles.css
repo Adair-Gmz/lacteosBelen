@@ -32,6 +32,7 @@ h2 {
 }
 
 .header-image {
+    position: relative;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
@@ -42,6 +43,17 @@ h2 {
     height: auto;
     display: block;
     object-fit: cover;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000; /*Cambiar el color del texto*/
+    font-size: 75px; /*Ajustar el tamaño de la fuente*/
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 footer {
