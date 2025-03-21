@@ -95,12 +95,10 @@ function loadProductsFromJSON() {
             loadSampleProducts();
         });
 }
-
-
-
 // Al cargar la página, inicializar la aplicación
 document.addEventListener('DOMContentLoaded', function() {
     
     // Cargar los productos desde el JSON
     loadProductsFromJSON();
 });
+
