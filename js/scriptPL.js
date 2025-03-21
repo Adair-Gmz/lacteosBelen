@@ -1,47 +1,73 @@
 // Array para almacenar los productos
 let productList = [];
 
-
-function add(product) {
-    // Agregar el producto al array
-    productList.push(product);
-    
-    // Actualizar la interfaz
-    displayProducts();
-    
-    
-    // Devolver el producto agregado (útil para encadenar operaciones)
-    return product;
+// Función para convertir una imagen a Base64
+function convertImageToBase64(url, callback) {
+    fetch(url)
+        .then(response => response.blob())
+        .then(blob => {
+            const reader = new FileReader();
+            reader.onloadend = () => callback(reader.result);
+            reader.readAsDataURL(blob);
+        })
+        .catch(error => {
+            console.error('Error al convertir la imagen a Base64:', error);
+            callback(url); // Si falla la conversión, usar la URL original
+        });
 }
 
+// Función para generar un nuevo ID basado en el ID más grande en localStorage y en los productos predeterminados
+function generateNewId() {
+    const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
+    const defaultProducts = productList; // Productos predeterminados ya cargados
+    const allProducts = [...storedProducts, ...defaultProducts]; // Combinar ambos arrays
 
-// Muestra los productos en la página HTML
+    if (allProducts.length === 0) return 1; // Si no hay productos, empezar con ID 1
+    const maxId = Math.max(...allProducts.map(product => product.id)); // Encontrar el ID más grande
+    return maxId + 1; // Devolver el siguiente ID
+}
 
+// Función para crear un nuevo producto
+function createProduct(name, img, description) {
+    const id = generateNewId(); // Generar un nuevo ID
+    return {
+        id: id,
+        name: name,
+        img: img,
+        description: description
+    };
+}
+
+// Función para agregar un producto
+function add(product) {
+    // Convertir la imagen a Base64 antes de agregar el producto
+    convertImageToBase64(product.img, (base64Image) => {
+        product.img = base64Image; // Reemplazar la URL con Base64
+        productList.push(product);
+        localStorage.setItem('products', JSON.stringify(productList)); // Guardar en localStorage
+        displayProducts();
+    });
+}
+
+// Función para mostrar los productos
 function displayProducts() {
     const container = document.getElementById('products-container');
     container.innerHTML = ''; // Limpiar el contenedor
-    
-    // Recorrer la lista de productos y crear el HTML para cada uno
+
     productList.forEach(product => {
-        // Crear elemento para el producto
         const productElement = document.createElement('div');
-        productElement.className = 'col-10 mx-auto product-item ';
-        
-        // Verificar si la imagen existe y cargarla con un manejo de errores
-        const imagePath = product.img;
-        
-        // Añadir HTML del producto
+        productElement.className = 'col-10 mx-auto product-item';
+
         productElement.innerHTML = `
             <div class="row">
                 <div class="col-md-5">
                     <div class="product-image">
-                        <img src="${imagePath}" alt="${product.name}" 
+                        <img src="${product.img}" alt="${product.name}" 
                              style="max-width: 100%; max-height: 100%;"
-                             onerror="this.onerror=null; this.src='quesosSinFondo/placeholder.png'; console.log('Error cargando imagen: ${imagePath}');">
+                             onerror="this.onerror=null; this.src='../Pic/quesosSinFondo/Botaneras-sin.png'; console.log('Error cargando imagen: ${product.img}');">
                     </div>
                 </div>
                 <div class="col-md-7">
-                    
                     <h4>${product.name}</h4>
                     <p>${product.description}</p>
                     <button class="btn add-to-cart-btn mt-3" onclick="addToCart('${product.name}')">
@@ -50,55 +76,61 @@ function displayProducts() {
                 </div>
             </div>
         `;
-        
-        // Añadir el producto al contenedor
         container.appendChild(productElement);
     });
 }
 
-
-
-
- // Carga los productos desde un archivo JSON
- 
-function loadProductsFromJSON() {
+// Función para cargar productos predeterminados desde JSON
+function loadDefaultProducts() {
     fetch('../Pic/products.json')
         .then(response => {
-            if (!response.ok) {
-                throw new Error('No se pudo cargar el archivo JSON');
-            }
+            if (!response.ok) throw new Error('No se pudo cargar el archivo JSON');
             return response.json();
         })
         .then(data => {
-            // Verificar que los datos son un array
-            if (!Array.isArray(data)) {
-                throw new Error('El formato del JSON no es correcto');
-            }
-            
-            // Agregar cada producto a la lista usando la función add
+            if (!Array.isArray(data)) throw new Error('El formato del JSON no es correcto');
             data.forEach(product => {
-                // Verificar que el producto tiene la estructura correcta
                 if (product.name && product.img && product.description) {
-                    add(product);
+                    // Verificar si el producto ya existe en localStorage para evitar duplicados
+                    const existingProduct = productList.find(p => p.id === product.id);
+                    if (!existingProduct) {
+                        productList.push(product); // Agregar el producto predeterminado
+                    }
                 } else {
                     console.warn('Producto con formato incorrecto:', product);
                 }
             });
-            
-            // Verificar que se agregaron correctamente
-            console.log(`Se han agregado ${productList.length} productos a la lista.`);
+            localStorage.setItem('products', JSON.stringify(productList)); // Guardar en localStorage
+            console.log(`Se han agregado ${productList.length} productos predeterminados a la lista.`);
         })
         .catch(error => {
-            console.error('Error al cargar los productos:', error);
-            
-            // Si hay un error al cargar el JSON, usar datos de muestra
-            loadSampleProducts();
+            console.error('Error al cargar los productos predeterminados:', error);
         });
 }
+
+
+// Función para cargar productos desde localStorage
+function loadProductsFromLocalStorage() {
+    const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
+    if (storedProducts.length > 0) {
+        productList = storedProducts; // Cargar productos desde localStorage
+        console.log('Productos cargados desde localStorage.');
+    } else {
+        loadDefaultProducts(); // Cargar productos predeterminados si no hay datos en localStorage
+    }
+}
+
+// Al cargar la página, inicializar la aplicación
+document.addEventListener('DOMContentLoaded', () => {
+    loadProductsFromLocalStorage(); // Cargar productos desde localStorage o predeterminados
+    displayProducts(); // Mostrar los productos
+});
+
 // Al cargar la página, inicializar la aplicación
 document.addEventListener('DOMContentLoaded', function() {
     
     // Cargar los productos desde el JSON
     loadProductsFromJSON();
 });
+
 

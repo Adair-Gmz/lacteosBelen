@@ -1,3 +1,4 @@
+
 /* Variables globales */
 :root {
     --primary-color: #02579E;
@@ -396,6 +397,7 @@ img:hover {
     padding: 0 15px;
 }
 
+
 /* Contenedor de productos */
 .product-container {
     margin-top: 30px;
@@ -423,6 +425,9 @@ img:hover {
     color: white;
     border-radius: 20px;
     padding: 5px 15px;
+
+}
+
 }
 
 /* Estilos para el pie de página */
@@ -562,4 +567,5 @@ iframe[src*="google.com/maps"] {
 iframe[src*="google.com/maps"]:hover {
     transform: scale(1.01);
 }
+
 
