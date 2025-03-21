@@ -108,6 +108,7 @@ function loadDefaultProducts() {
         });
 }
 
+
 // Función para cargar productos desde localStorage
 function loadProductsFromLocalStorage() {
     const storedProducts = JSON.parse(localStorage.getItem('products')) || [];
@@ -124,3 +125,12 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProductsFromLocalStorage(); // Cargar productos desde localStorage o predeterminados
     displayProducts(); // Mostrar los productos
 });
+
+// Al cargar la página, inicializar la aplicación
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Cargar los productos desde el JSON
+    loadProductsFromJSON();
+});
+
+
