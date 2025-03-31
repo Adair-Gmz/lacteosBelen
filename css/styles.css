@@ -1,3 +1,4 @@
+
 /* Variables globales */
 :root {
     --primary-color: #02579E;
@@ -396,6 +397,7 @@ img:hover {
     padding: 0 15px;
 }
 
+
 /* Contenedor de productos */
 .product-container {
     margin-top: 30px;
@@ -422,6 +424,9 @@ img:hover {
     color: white;
     border-radius: 20px;
     padding: 5px 15px;
+
+}
+
 }
 
 /* Estilos para el pie de página */
@@ -493,6 +498,7 @@ img:hover {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+
 /* Media queries para responsividad */
 @media (max-width: 768px) {
     h2 {
@@ -560,4 +566,5 @@ iframe[src*="google.com/maps"] {
 iframe[src*="google.com/maps"]:hover {
     transform: scale(1.01);
 }
+
 
