@@ -566,5 +566,34 @@ iframe[src*="google.com/maps"] {
 iframe[src*="google.com/maps"]:hover {
     transform: scale(1.01);
 }
+/*Logi- Registro*/
 
+
+/*Formularios*/
+.contenedorLoginRegister {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: center;
+    border-radius: 15px;
+    margin-top: 50px;
+}
+.contenedorLoginRegister label {
+    color: #000000; /* Cambia el color de las etiquetas, por ejemplo, a verde */
+}
+
+.contenedorLoginRegister form {
+    max-width: 600px;
+    min-height: 600px;
+    height: auto;
+    width: 100%;
+    padding: 80px 20px;
+    background:  #709EBE;
+    border-radius: 20px;
+   
+}
+.contenedorLoginRegister form {
+    padding: 60px 40px;
+}
 
