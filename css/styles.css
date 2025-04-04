@@ -303,9 +303,12 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-
-.text-center {
-    font-family: 'Roboto', sans-serif;
+.text-recetas {
+    text-align: center; /* Centra el texto */
+    color: black; /* Cambia el color del texto a negro */
+    font-size: 3.2rem; /* Ajusta el tamaño del texto (opcional) */
+    font-weight: bold; /* Hace el texto más destacado (opcional) */
+    margin-top: 10px; /* Espaciado entre la imagen y el texto */
 }
 
 
@@ -358,6 +361,16 @@ h2 {
     position: relative;
     color: white; /* Color del texto */
     text-align: center;
+}
+/* Ajustar el tamaño de las imágenes del recetario */
+.recetas-section img {
+    max-width: 100%; /* Asegura que no excedan el ancho del contenedor */
+    height: auto; /* Mantiene la proporción */
+    width: 500px; /* Ajusta el ancho deseado */
+    border-radius: 10px; /* Opcional: redondear bordes */
+    margin: 0 auto; /* Centra la imagen */
+    display: block; /* Asegura que la imagen sea un bloque para centrarla */
+
 }
 .header-title {
     font-family: 'Lora', serif; /* Cambia la fuente según tus preferencias */
@@ -446,7 +459,6 @@ img:hover {
 
 }
 
-}
 
 /* Estilos para el pie de página */
 .site-footer {
