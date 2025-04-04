@@ -366,11 +366,18 @@ h2 {
 .recetas-section img {
     max-width: 100%; /* Asegura que no excedan el ancho del contenedor */
     height: auto; /* Mantiene la proporción */
-    width: 500px; /* Ajusta el ancho deseado */
+    width: 400px; /* Ajusta el ancho deseado */
     border-radius: 10px; /* Opcional: redondear bordes */
     margin: 0 auto; /* Centra la imagen */
     display: block; /* Asegura que la imagen sea un bloque para centrarla */
 
+}
+.text-center {
+    font-family: 'Lato', sans-serif, bold; /* Cambia la tipografía a Lato */
+    font-size: 1.5rem; /* Ajusta el tamaño del texto si es necesario */
+    color: #00173D; /* Mantén el color actual o cámbialo según tus preferencias */
+    text-align: center; /* Asegura que el texto esté centrado */
+    margin-bottom: 1.5rem; /* Espaciado inferior */
 }
 .header-title {
     font-family: 'Lora', serif; /* Cambia la fuente según tus preferencias */
