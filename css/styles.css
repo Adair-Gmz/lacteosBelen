@@ -146,7 +146,7 @@ a {
     background-image: url('/Pic/imagen\ contacto.jpg'); /* Reemplaza con la ruta de tu imagen */
     background-size: cover;
     background-position: center;
-    height: 30vh; /* Ajusta la altura según tus necesidades */
+    height: 40vh; /* Ajusta la altura según tus necesidades */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -426,11 +426,30 @@ h2 {
     height: 50%;
 }
 
-.header-image {
+.header-image{
+    background-image: url('/Pic/Nosotros\ imagen.jpeg'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
+    height: 40vh; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    color: white; /* Color del texto */
+    text-align: center;
+}
+.header-image-productos{
+    background-image: url('/Pic/Rack\ quesos\ horizontal.png'); /* Ruta de la imagen */
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
+    height: 40vh; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white; /* Color del texto */
+    text-align: center;
 }
 
 .header-image img {
@@ -443,7 +462,7 @@ h2 {
     background-image: url('../Pic/recetas fondo.jpg'); /* Ruta de la imagen */
     background-size: cover;
     background-position: center;
-    height: 30vh; /* Ajusta la altura según tus necesidades */
+    height: 40vh; /* Ajusta la altura según tus necesidades */
     display: flex;
     align-items: center;
     justify-content: center;
