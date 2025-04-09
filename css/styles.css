@@ -7,6 +7,12 @@
     --dark-color: #263238;
     --text-color: #333333;
     --transition: all 0.3s ease;
+    --color-light: #FEFFEA;
+    --color-blue-light: #709EBE;
+    --color-yellow: #F4D35E;
+    --color-dark-blue: #00173D;
+    --color-deep-blue: #02579E;
+    --color-pink: #E6A5B5;
 }
 
 /* Estilos generales */

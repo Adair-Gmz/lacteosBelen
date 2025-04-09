@@ -16,158 +16,7 @@
 
     <link rel="stylesheet" href="../css/styles.css">
 <style>
-   :root {
-        --primary-color: #02579E;
-        --secondary-color: #709EBE;
-        --light-color: #FEFFEA;
-        --dark-color: #263238;
-        --text-color: #333333;
-        --transition: all 0.3s ease;
-    }
-    
-    body {
-        background-color: var(--light-color);
-        font-family: 'Lato', sans-serif;
-        color: var(--text-color);
-        padding-top: 76px; /* Para compensar la navbar fixed */
-    }
-    
-    /* Navbar */
-    .navbar {
-        background-color: var(--primary-color);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        transition: var(--transition);
-        padding: 15px 0;
-        font-family: 'Lato', sans-serif;
-    }
-    
-    .navbar-scrolled {
-        padding: 8px 0;
-        background-color: rgba(2, 87, 158, 0.95);
-    }
-    
-    .navbar-brand {
-        display: flex;
-        align-items: center;
-    }
-    
-    .logo {
-        max-height: 45px;
-    }
-    
-    .navbar .nav-link {
-        color: var(--light-color) !important;
-        font-weight: 500;
-        font-size: 1rem;
-        margin: 0 5px;
-        position: relative;
-        transition: color 0.3s ease;
-        padding: 0.5rem 0.8rem;
-    }
-    
-    /* Efecto para los enlaces de navegación */
-    .navbar .nav-link:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 2px;
-        bottom: 0;
-        left: 50%;
-        background-color: var(--light-color);
-        transition: all 0.3s ease;
-        transform: translateX(-50%);
-        opacity: 0;
-    }
-    
-    /* Solo muestra la línea para el enlace activo/actual */
-    .navbar .nav-link.active:after {
-        width: 80%;
-        opacity: 1;
-        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-    
-    /* Efecto hover para todos los enlaces */
-    .navbar .nav-link:hover {
-        color: var(--light-color) !important;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-    
-    /* Estilo específico para el enlace activo */
-    .navbar .nav-link.active {
-        color: var(--light-color) !important;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        font-weight: 600;
-    }
-    
-    /* Estilos para el botón de cambio de tema */
-    .theme-switch-wrapper {
-        display: flex;
-        align-items: center;
-    }
-    
-    .theme-switch {
-        display: inline-block;
-        height: 24px;
-        position: relative;
-        width: 50px;
-    }
-    
-    .theme-switch input {
-        display: none;
-    }
-    
-    .slider {
-        background-color: var(--secondary-color);
-        bottom: 0;
-        cursor: pointer;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        transition: 0.4s;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 5px;
-    }
-    
-    .slider .fa-sun {
-        color: #f39c12;
-        font-size: 12px;
-    }
-    
-    .slider .fa-moon {
-        color: #f1c40f;
-        font-size: 12px;
-    }
-    
-    .slider:before {
-        background-color: white;
-        bottom: 4px;
-        content: "";
-        height: 16px;
-        left: 4px;
-        position: absolute;
-        transition: 0.4s;
-        width: 16px;
-        z-index: 1;
-    }
-    
-    input:checked + .slider {
-        background-color: var(--dark-color);
-    }
-    
-    input:checked + .slider:before {
-        transform: translateX(26px);
-    }
-    
-    .slider.round {
-        border-radius: 34px;
-    }
-    
-    .slider.round:before {
-        border-radius: 50%;
-    }
+  
     
     /* Estilos específicos para la página de contacto */
     :root {
@@ -391,7 +240,10 @@
     </nav>
 
         <div class="contact-container col-md-5 col-lg-4 p-4 rounded shadow mx-auto">
-            <h1 class="text-center mb-4">Contáctanos</h1>
+            <div class="header-image-contacto">
+                <h1 class="header-title">Contacto</h1>
+            </div>
+            
             
             <form id="contactForm">
                 <div class="mb-3">
