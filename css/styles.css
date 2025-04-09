@@ -81,6 +81,89 @@ a {
     opacity: 0;
 }
 
+/* CSS DE PÁGINA CONTACTO */
+
+.contact-container {
+    background-color: white;
+    border: 2px solid var(--color-blue-light);
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+.contact-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.form-control {
+    border-color: var(--color-blue-light);
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--color-pink);
+    box-shadow: 0 0 0 0.2rem rgba(230, 165, 181, 0.25);
+}
+ 
+@media (max-width: 768px) {
+    .contact-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        margin: 30px auto;
+    }
+    
+    .bg-image {
+        height: 150px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    body {
+        padding-top: 86px;
+    }
+}
+@media (max-width: 576px) {
+    .bg-image {
+        height: 120px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+  /* imagen de fondo */
+.header-image-contacto {
+    background-image: url('/Pic/imagen\ contacto.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    height: 30vh; /* Ajusta la altura según tus necesidades */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white; /* Color del texto */
+    text-align: center;
+   
+}
+   
+#successMessage {
+    background-color: var(--color-yellow);
+    color: var(--color-dark-blue);
+    border: none;
+}
+
+
+
 /* Solo muestra la línea para el enlace activo/actual */
 .navbar .nav-link.active:after {
     width: 80%;
@@ -360,7 +443,7 @@ h2 {
     background-image: url('../Pic/recetas fondo.jpg'); /* Ruta de la imagen */
     background-size: cover;
     background-position: center;
-    height: 50vh; /* Ajusta la altura según tus necesidades */
+    height: 30vh; /* Ajusta la altura según tus necesidades */
     display: flex;
     align-items: center;
     justify-content: center;
