@@ -150,59 +150,103 @@
         </div>
     </nav>
 
-    <!-- Resto del contenido de la página irá aquí -->
-    <section id="recetas" class="recetas-section">
-        <div class="header-image-recetas">
-            <h1 class="header-title">Recetas</h1>
-        </div>
+   <!-- Resto del contenido de la página irá aquí -->
+   <section id="recetas" class="recetas-section">
+    <div class="header-image-recetas">
+        <h1 class="header-title">Recetas</h1>
+    </div>
+      
+      <main class="container">
+        <!-- Categorías Populares -->
+        <section class="mb-5">
+            <h2 class="section-title">¿Ya sabes con qué vas a cocinar hoy?</h2>
+            <div class="row categories-container">
+                <div class="col-4 col-md-2 category-item" data-aos="fade-up" data-aos-delay="100">
+                      <a href="recipesFresco.html" class="category-link">
+                        <div class="category-circle">
+                            <img src="/Pic/queso fresco ilustración recetario.png" alt="Queso fresco">
+                        </div>
+                        <p class="category-name">Queso fresco</p>
+                    </a>
+                </div>
+                <div class="col-4 col-md-2 category-item" data-aos="fade-up" data-aos-delay="200">
+                    <a href="recipesAbodera.html" class="category-link">
+                        <div class="category-circle">
+                            <img src="/Pic/adobera ilustración recetario.png" alt="Adobera">
+                        </div>
+                        <p class="category-name">Adobera</p>
+                    </a>
+                </div>
+                <div class="col-4 col-md-2 category-item" data-aos="fade-up" data-aos-delay="300">
+                    <a href="recipesJocoque.html" class="category-link">
+                        <div class="category-circle">
+                            <img src="/Pic/jocoques ilustración recetario.png" alt="Jocoque">
+                        </div>
+                        <p class="category-name">Jocoque</p>
+                    </a>
+                </div>
+                <div class="col-4 col-md-2 category-item" data-aos="fade-up" data-aos-delay="400">
+                    <a href="recipesPanela.html" class="category-link">
+                        <div class="category-circle">
+                            <img src="/Pic/queso panela ilustración recetario.png" alt="Queso panela">
+                        </div>
+                        <p class="category-name">Panela</p>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <div class="container">
-            <!-- Subtítulo -->
-            <div class="text-center mb-4">
-                <h2 class="subtitle">¿Ya sabes qué vas a cocinar hoy?</h2>
-                <p class="lead">Encuentra inspiración en las diferentes recetas acompañadas por el tradicional sabor de "Lácteos y derivados Belén".</p>
-            </div>
-    
-            <!-- Fila de categorías -->
+        <!-- Super Delicious -->
+        <section class="mb-5">
+            <h2 class="section-title">Entradas populares</h2>
             <div class="row">
-                <!-- Queso fresco -->
-                <div class="col-md-6 mb-4">
-                    <a href="recetasQuesoFresco.html">
-                        <h3 class="text-recetas">Queso Fresco</h3>
-                        <img src="/Pic/queso fresco ilustración recetario.png" alt="Queso Fresco" class="img-fluid rounded shadow">
-                        
-                    </a>
+                <!-- Entrada 1 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/donuts.jpg" alt="Baked Berry Cream Cheese Buttermilk Donuts" class="img-fluid">
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Los beneficios de implementar queso en tu dieta</h3>
+                        </div>
+                    </div>
                 </div>
-    
-                <!-- Queso panela -->
-                <div class="col-md-6 mb-4">
-                    <a href="recetasQuesoPanela.html">
-                        <h3 class="text-recetas">Queso Panela</h3>
-                        <img src="/Pic/queso panela ilustración recetario.png" alt="Queso Panela" class="img-fluid rounded shadow">
-                    </a>
+                
+                <!-- Entrada 2 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/kale.jpg" alt="Best Plant Club for Creamy Kale" class="img-fluid">
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">La historia del queso Adobera que quizá no sabías</h3>
+                        </div>
+                    </div>
                 </div>
+                
+                <!-- REntradad 3 -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="recipe-card">
+                        <div class="recipe-image">
+                            <img src="images/biscuits.jpg" alt="Berry Molasses Biscuit" class="img-fluid">
+                        </div>
+                        <div class="recipe-content">
+                            <h3 class="recipe-title">Consumo de queso en México</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+               
+                
+                
             </div>
+        </section>
+    </main>
     
-            <div class="row">
-                <!-- Jocoque -->
-                <div class="col-md-6 mb-4">
-                    <a href="recetasJocoque.html">
-                        <h3 class="text-recetas">Jocoque</h3>
-                        <img src="/Pic/jocoques ilustración recetario.png" alt="Jocoque" class="img-fluid rounded shadow">
-                    </a>
-                </div>
-    
-                <!-- Adobera -->
-                <div class="col-md-6 mb-4">
-                    <a href="recetasAdobera.html">
-                        <h3 class="text-recetas">Adobera</h3>
-                        <img src="/Pic/adobera ilustración recetario.png" alt="Adobera" class="img-fluid rounded shadow">
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+</section>
 
 
     <!-- Footer -->
