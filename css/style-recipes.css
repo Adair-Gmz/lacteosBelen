@@ -175,6 +175,12 @@ body {
     flex: 1; /* Asegura que las columnas tengan el mismo ancho */
     max-width: 30%; /* Limita el ancho máximo de cada columna */
   }
+  .recipe-main-image img {
+    width: 100%; /* Ajusta al ancho del contenedor */
+    height: 250px; /* Altura fija */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
   
   /* Media Query para dispositivos pequeños */
   @media (max-width: 576px) {
