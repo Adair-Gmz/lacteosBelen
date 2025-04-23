@@ -150,7 +150,7 @@ img:hover {
 }
 
 .header-image {
-    background-image: url('/Pic/Nosotros\ imagen.jpeg');
+    background-image: url('/lacteosBelen/Pic/Nosotros\ imagen.jpeg');
 }
 
 .header-image-productos {
@@ -164,6 +164,7 @@ img:hover {
 .header-image-contacto {
     background-image: url('/Pic/imagen\ contacto.jpg');
 }
+
 
 /* Animación para el título del encabezado */
 @keyframes fadeInUp {
@@ -528,6 +529,69 @@ input:checked + .slider:before {
     padding: 80px 20px;
     background: #709EBE;
     border-radius: 20px;
+}
+/*About us*/
+/* Estilos específicos para la sección Misión, Visión y Valores */
+.value-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+}
+
+.value-card i {
+    font-size: 40px;
+    color: #f8a100;
+    margin-bottom: 15px;
+}
+
+.value-card h4 {
+    font-family: 'Lora', serif;
+    margin-bottom: 15px;
+}
+/* Estilos para la sección "¿De Dónde Somos?" */
+.location-section {
+    background-color: #fff8e6;
+    padding: 60px 0;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.location-img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.section-title {
+    font-family: 'Lora', serif;
+    color: #4a4a4a;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #f8a100;
+}
+
+.content-text {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.8;
+    color: #333;
 }
 
 /* Footer */
