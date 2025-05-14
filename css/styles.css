@@ -150,7 +150,7 @@ img:hover {
 }
 
 .header-image {
-    background-image: url('/lacteosBelen/Pic/Nosotros\ imagen.jpeg');
+    background-image: url('/Pic/Nosotros\ imagen.jpeg');
 }
 
 .header-image-productos {
@@ -158,7 +158,7 @@ img:hover {
 }
 
 .header-image-recetas {
-    background-image: url('../Pic/recetas fondo.jpg');
+    background-image: url('../Pic/recetas\ fondo.jpg');
 }
 
 .header-image-contacto {
