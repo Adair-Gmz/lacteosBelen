@@ -196,6 +196,12 @@ img:hover {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+.text-start.col-md-6 {
+    font-size: 18px;
+}
+.text-center mb-4 {
+    font-size: 30px;
+}
 
 /* Estilos para el botón de cambio de tema */
 .theme-switch-wrapper {
