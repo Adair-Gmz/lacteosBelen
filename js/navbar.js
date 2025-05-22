@@ -51,21 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Cart animation
-    const cartBtn = document.getElementById('cartBtn');
-    if (cartBtn) {
-        cartBtn.addEventListener('click', function(e) {
-            const cartCount = this.querySelector('.cart-count');
-            cartCount.classList.add('animate__animated', 'animate__rubberBand');
-            
-            setTimeout(function() {
-                cartCount.classList.remove('animate__animated', 'animate__rubberBand');
-            }, 1000);
-            
-            // Here you would add your cart logic
-            e.preventDefault();
-        });
-    }
+
     
     // Mobile menu enhancements
     const navbarToggler = document.querySelector('.navbar-toggler');
@@ -149,30 +135,7 @@ function createRipple(event) {
     }, 600);
 }
 
-// Add cart functionality
-function addToCart(productId, quantity = 1) {
-    // Get current cart count
-    const cartCount = document.querySelector('.cart-count');
-    let currentCount = parseInt(cartCount.textContent);
-    
-    // Update count
-    currentCount += quantity;
-    cartCount.textContent = currentCount;
-    
-    // Add animation
-    cartCount.classList.add('animate__animated', 'animate__bounceIn');
-    
-    // Remove animation class after it completes
-    setTimeout(function() {
-        cartCount.classList.remove('animate__animated', 'animate__bounceIn');
-    }, 1000);
-    
-    // You would also update your cart storage here (localStorage, sessionStorage, or API call)
-    console.log(`Added product ${productId} to cart. Quantity: ${quantity}`);
-    
-    // Show a toast notification
-    showToast(`¡Producto agregado al carrito!`);
-}
+
 
 // Toast notification function
 function showToast(message) {
@@ -183,18 +146,7 @@ function showToast(message) {
         document.body.appendChild(toastContainer);
     }
     
-    // Create toast element
-    const toastId = 'toast-' + Date.now();
-    const toastHTML = `
-        <div id="${toastId}" class="toast align-items-center bg-primary text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex">
-                <div class="toast-body">
-                    <i class="fas fa-shopping-cart me-2"></i> ${message}
-                </div>
-                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
-        </div>
-    `;
+    
     
     // Add toast to container
     document.querySelector('.toast-container').innerHTML += toastHTML;

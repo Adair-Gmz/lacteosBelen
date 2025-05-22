@@ -30,11 +30,7 @@ function displayProducts() {
                                 <h5 class="card-title mb-2">${product.name}</h5>
                                 <p class="card-text text-muted">${product.description}</p>
                             </div>
-                            <div class="add-to-cart-wrapper">
-                                <button class="btn btn-sm btn-primary add-to-cart-btn" onclick="addToCart('${i + j}')">
-                                    <i class="fas fa-shopping-cart me-1"></i> Añadir
-                                </button>
-                            </div>
+                           
                         </div>
                     </div>
                 `;

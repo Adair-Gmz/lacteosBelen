@@ -409,26 +409,10 @@ input:checked + .slider:before {
     border-right: 1px solid #eee;
 }
 
-.add-to-cart-wrapper {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-}
 
-.add-to-cart-btn {
-    font-size: 1.6rem;
-    padding: 18px 36px;
-    border-radius: 45px;
-    background-color: #02579E;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    color: white;
-}
 
-.add-to-cart-btn:hover {
-    background-color: #034d8a;
-    transform: scale(1.05);
-}
+
+
 
 /* Página de contacto */
 .contact-container {
@@ -512,30 +496,7 @@ input:checked + .slider:before {
     height: auto;
 }
 
-/* Login y registro */
-.contenedorLoginRegister {
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    position: center;
-    border-radius: 15px;
-    margin-top: 50px;
-}
 
-.contenedorLoginRegister label {
-    color: #000000;
-}
-
-.contenedorLoginRegister form {
-    max-width: 600px;
-    min-height: 600px;
-    height: auto;
-    width: 100%;
-    padding: 80px 20px;
-    background: #709EBE;
-    border-radius: 20px;
-}
 /*About us*/
 /* Estilos específicos para la sección Misión, Visión y Valores */
 .value-card {
@@ -740,10 +701,7 @@ iframe[src*="google.com/maps"]:hover {
         height: 450px;
     }
     
-    .add-to-cart-btn {
-        font-size: 1.4rem;
-        padding: 15px 30px;
-    }
+  
 }
 
 /* Para tablets */
@@ -801,10 +759,7 @@ iframe[src*="google.com/maps"]:hover {
         height: 350px;
     }
     
-    .add-to-cart-btn {
-        font-size: 1.2rem;
-        padding: 12px 24px;
-    }
+ 
     
     .text-recetas {
         font-size: 2.5rem;
@@ -887,28 +842,16 @@ iframe[src*="google.com/maps"]:hover {
         border-bottom: 1px solid #eee;
     }
 
-    .add-to-cart-wrapper {
-        position: static;
-        margin-top: 15px;
-        display: flex;
-        justify-content: center;
-    }
+  
     
-    .add-to-cart-btn {
-        font-size: 1rem;
-        padding: 10px 20px;
-        width: 100%;
-    }
+  
     
     .contact-container {
         width: 90%;
         margin: 30px auto;
     }
     
-    .contenedorLoginRegister form {
-        padding: 40px 15px;
-        min-height: 500px;
-    }
+   
 }
 
 /* Para móviles pequeños */
@@ -966,9 +909,7 @@ iframe[src*="google.com/maps"]:hover {
         font-size: 1.8rem;
     }
     
-    .contenedorLoginRegister form {
-        min-height: 450px;
-    }
+ 
 }
 
 /* Ajuste para pantallas muy pequeñas */
@@ -981,10 +922,7 @@ iframe[src*="google.com/maps"]:hover {
         font-size: 1.2rem;
     }
     
-    .add-to-cart-btn {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
+    
 }
 
 
@@ -1060,10 +998,7 @@ body {
     color: #6c757d;
 }
 
-.add-to-cart-wrapper {
-    text-align: right;
-    margin-top: 1rem;
-}
+
 
 /* Contenedor de producto general (para igualar alturas) */
 #products-container {
@@ -1085,9 +1020,7 @@ body {
         width: 100%;
     }
 
-    .add-to-cart-wrapper {
-        text-align: center;
-    }
+   
 
     .card-body {
         height: auto;
