@@ -247,17 +247,6 @@ a {
     padding-bottom: 8px;
 }
 
-/* Menu product images */
-.menu-product-image {
-    width: 50px;
-    height: 50px;
-    background-color: #EEE;
-    border-radius: 8px;
-    background-image: url('../Pic/placeholder.jpg');
-    background-size: cover;
-    background-position: center;
-    transition: var(--transition-medium);
-}
 
 .promotion-image {
     background-image: url('../Pic/placeholder.jpg');
@@ -494,60 +483,6 @@ a {
     }
 }
 
-/* Product card hover effects */
-.product-card {
-    transition: var(--transition-medium);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    border: none;
-    height: 100%;
-}
-
-.product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-}
-
-.product-card .card-img-top {
-    transition: var(--transition-medium);
-    height: 200px;
-    object-fit: cover;
-}
-
-.product-card:hover .card-img-top {
-    transform: scale(1.05);
-}
-
-.product-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background-color: var(--accent-color);
-    color: white;
-    font-weight: 600;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    box-shadow: 0 3px 10px rgba(255, 158, 27, 0.3);
-    z-index: 2;
-    transform: rotate(5deg);
-}
-
-.product-card .btn-add-to-cart {
-    position: absolute;
-    bottom: -45px;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: var(--transition-medium);
-    opacity: 0;
-    width: 80%;
-}
-
-.product-card:hover .btn-add-to-cart {
-    bottom: 15px;
-    opacity: 1;
-}
 
 /* Footer styling */
 footer {
@@ -644,6 +579,10 @@ footer::before {
     color: var(--light-color);
     margin: 0 5px;
     transition: var(--transition-medium);
+}
+/* Cambia el color solo del icono de Facebook en el footer */
+.social-links a .fa-facebook-f {
+    color: #1877f2 !important;
 }
 
 .social-links a:hover {
